@@ -1,0 +1,19 @@
+.card.shadow {
+  border-radius: 15px;
+}
+
+.card-body {
+  height: 161px;
+}
+
+.text-uppercase.text-primary.font-weight-bold.text-xs.mb-1 {
+  text-transform: none !important;
+  font-family: 'Nunito';
+  font-size: 16px;
+  color: #202224 !important;
+}
+
+strong {
+  color: #00b69b;
+}
+
