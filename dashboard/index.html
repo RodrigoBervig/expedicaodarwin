@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="assets/fonts/line-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
     <link rel="stylesheet" href="assets/css/untitled.css">
 </head>
 
@@ -38,11 +41,12 @@
             </div>
         </nav>
         <div class="d-flex flex-column" id="content-wrapper">
-            <div id="content">
-                <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top" style="background-color: #1ade8d !important;">
+            <div id="content" style="/*background-color: #f6f6fa;*//*background: linear-gradient(to bottom, #1ade8d 50%, #f5f6fa 50%);*/position: relative;">
+                <div style="position: absolute;background: #1ade8d;height: 384px;left: 0;right: 0;"></div>
+                <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top" style="background-color: #1ade8d !important;border-bottom: 1px solid rgba(235,236,239,0.8);">
                     <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle mr-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
                         <form class="form-inline d-none d-sm-inline-block mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                            <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="Search for ..." style="border-radius: 25px;"></div>
+                            <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="Busca" style="border-radius: 25px;"></div>
                         </form>
                         <ul class="nav navbar-nav flex-nowrap ml-auto">
                             <li class="nav-item dropdown d-sm-none no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><i class="fas fa-search"></i></a>
@@ -55,7 +59,7 @@
                                 </div>
                             </li>
                             <li class="nav-item dropdown no-arrow mx-1" role="presentation">
-                                <li class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><span class="badge badge-danger badge-counter">3+</span><i class="fas fa-bell fa-fw"></i></a>
+                                <li class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><span class="badge badge-danger badge-counter">3+</span><i class="fas fa-bell fa-fw" style="color: #fff;"></i></a>
                                     <div class="dropdown-menu dropdown-menu-right dropdown-list dropdown-menu-right animated--grow-in"
                                         role="menu">
                                         <h6 class="dropdown-header">alerts center</h6>
@@ -86,7 +90,7 @@
                                 </li>
                             </li>
                             <li class="nav-item dropdown no-arrow mx-1" role="presentation">
-                                <li class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><i class="fas fa-envelope fa-fw"></i><span class="badge badge-danger badge-counter">7</span></a>
+                                <li class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><i class="fas fa-envelope fa-fw" style="color: #fff;"></i><span class="badge badge-danger badge-counter">7</span></a>
                                     <div class="dropdown-menu dropdown-menu-right dropdown-list dropdown-menu-right animated--grow-in"
                                         role="menu">
                                         <h6 class="dropdown-header">alerts center</h6>
@@ -142,9 +146,9 @@
                     </ul>
             </div>
             </nav>
-            <div class="container-fluid">
+            <div class="container-fluid" style="/*background-color: #f5f6fa;*//*background: linear-gradient(to bottom, #1ade8d 50%, #f5f6fa 50%);*/">
                 <div class="d-sm-flex justify-content-between align-items-center mb-4">
-                    <h3 class="text-dark mb-0">Dashboard</h3>
+                    <h3 class="text-dark mb-0" id="background-verde" style="font-family: 'Nunito';font-weight: 700;color: #fff !important;padding-top: 20px;z-index: 1;">Dashboard</h3>
                 </div>
                 <div class="row">
                     <div class="col-md-6 col-xl-3 mb-4">
@@ -152,15 +156,15 @@
                             <div class="card-body">
                                 <div class="row align-items-center no-gutters">
                                     <div class="col mr-2">
-                                        <p style="font-family: 'Nunito';font-weight: 500;margin-bottom: 0px;margin-top: -29px;margin-left: -3px;font-size: 15px;color: #202224;">Status Evolutivo</p>
+                                        <p style="font-family: 'Nunito';font-weight: 700;margin-bottom: 0px;margin-top: -17px;margin-left: 26px;font-size: 15px;color: #202224;opacity: 0.70;">Status Evolutivo</p>
                                     </div>
                                     <div class="col-auto">
-                                        <div class="shadow-icon" style="background-color: rgba(26,222,141,0.24);border-radius: 20px;padding: 10px;width: 52px;margin-right: -6px;margin-top: -20px;color: #858796;"><img src="assets/img/image.svg" style="width: 31px;height: 37px;"></div>
+                                        <div class="shadow-icon" style="background-color: rgba(26,222,141,0.24);border-radius: 20px;padding: 10px;width: 52px;margin-right: 8px;margin-top: 0px;color: #858796;"><img src="assets/img/image.svg" style="width: 31px;height: 37px;"></div>
                                     </div>
                                 </div>
-                                <h1 style="font-family: 'Nunito';font-weight: 600;color: #202224;font-size: 23px;padding: 0px;padding-top: 9px;margin-left: -4px;">Australopithecus</h1>
-                                <div class="row"><i class="material-icons vertical-align-middle" style="color: #1ade8d;margin-top: 10px;margin-right: 2px;margin-left: 7px;">trending_up</i>
-                                    <p style="padding-top: 11px;margin-left: 5px;width: 162px;margin-right: 0px;"><strong>8 aulas</strong> para evolução</p>
+                                <h1 style="font-family: 'Nunito';font-weight: 700;color: #202224;font-size: 23px;padding: 0px;padding-top: 9px;margin-left: 23px;margin-top: -5px;">Australopithecus</h1>
+                                <div class="row"><i class="material-icons vertical-align-middle" style="color: #1ade8d;margin-top: 10px;margin-right: 1px;margin-left: 34px;">trending_up</i>
+                                    <p style="padding-top: 11px;margin-left: 7px;width: 162px;margin-right: 0px;opacity: 0.70;font-weight: 700;"><strong>8 aulas</strong> para evolução</p>
                                 </div>
                             </div>
                         </div>
@@ -170,15 +174,15 @@
                             <div class="card-body">
                                 <div class="row align-items-center no-gutters">
                                     <div class="col mr-2">
-                                        <p style="font-family: 'Nunito';font-weight: 500;margin-bottom: 0px;margin-top: -29px;margin-left: -3px;font-size: 15px;color: #202224;">Status Evolutivo</p>
+                                        <p style="font-family: 'Nunito';font-weight: 700;margin-bottom: 0px;margin-top: -17px;margin-left: 26px;font-size: 15px;color: #202224;opacity: 0.70;">Aulas deste módulo</p>
                                     </div>
                                     <div class="col-auto">
-                                        <div class="shadow-icon" style="background-color: rgba(26,222,141,0.24);border-radius: 20px;padding: 10px;width: 52px;margin-right: -6px;margin-top: -20px;color: #858796;"><img src="assets/img/image.svg" style="width: 31px;height: 37px;"></div>
+                                        <div class="shadow-icon" style="background-color: rgba(245,199,89,0.24);border-radius: 20px;padding: 10px;width: 52px;margin-right: 8px;margin-top: 0px;color: #858796;padding-top: 1px;padding-bottom: -0;"><i class="icon ion-cube" style="font-size: 37px;color: #f3c53d;"></i></div>
                                     </div>
                                 </div>
-                                <h1 style="font-family: 'Nunito';font-weight: 600;color: #202224;font-size: 23px;padding: 0px;padding-top: 9px;margin-left: -4px;">Australopithecus</h1>
-                                <div class="row"><i class="material-icons vertical-align-middle" style="color: #1ade8d;margin-top: 10px;margin-right: 2px;margin-left: 7px;">trending_up</i>
-                                    <p style="padding-top: 11px;margin-left: 5px;width: 162px;margin-right: 0px;"><strong>8 aulas</strong> para evolução</p>
+                                <h1 style="font-family: 'Nunito';font-weight: 700;color: #202224;font-size: 23px;padding: 0px;padding-top: 9px;margin-left: 23px;margin-top: -5px;"><strong style="font-family: 'Nunito';color: #f3c53d;">10/</strong>40</h1>
+                                <div class="row"><i class="material-icons vertical-align-middle" style="color: #fec53d;margin-top: 10px;margin-right: 1px;margin-left: 34px;">trending_up</i>
+                                    <p class="sucess" style="padding-top: 11px;margin-left: 7px;width: 199px;margin-right: 0px;opacity: 0.70;font-weight: 700;">&nbsp;<strong>8 dias&nbsp;</strong>para<strong>&nbsp;finalização</strong><br><br></p>
                                 </div>
                             </div>
                         </div>
@@ -188,15 +192,15 @@
                             <div class="card-body">
                                 <div class="row align-items-center no-gutters">
                                     <div class="col mr-2">
-                                        <p style="font-family: 'Nunito';font-weight: 500;margin-bottom: 0px;margin-top: -29px;margin-left: -3px;font-size: 15px;color: #202224;">Status Evolutivo</p>
+                                        <p style="font-family: 'Nunito';font-weight: 700;margin-bottom: 0px;margin-top: -17px;margin-left: 26px;font-size: 15px;color: #202224;opacity: 0.70;">Missões Restantes</p>
                                     </div>
                                     <div class="col-auto">
-                                        <div class="shadow-icon" style="background-color: rgba(26,222,141,0.24);border-radius: 20px;padding: 10px;width: 52px;margin-right: -6px;margin-top: -20px;color: #858796;"><img src="assets/img/image.svg" style="width: 31px;height: 37px;"></div>
+                                        <div class="shadow-icon" style="background-color: rgba(26,222,141,0.24);border-radius: 20px;padding: 10px;width: 52px;margin-right: 8px;margin-top: 0px;color: #858796;"><i class="fa fa-line-chart" style="font-size: 28px;color: #1ade8d;"></i></div>
                                     </div>
                                 </div>
-                                <h1 style="font-family: 'Nunito';font-weight: 600;color: #202224;font-size: 23px;padding: 0px;padding-top: 9px;margin-left: -4px;">Australopithecus</h1>
-                                <div class="row"><i class="material-icons vertical-align-middle" style="color: #1ade8d;margin-top: 10px;margin-right: 2px;margin-left: 7px;">trending_up</i>
-                                    <p style="padding-top: 11px;margin-left: 5px;width: 162px;margin-right: 0px;"><strong>8 aulas</strong> para evolução</p>
+                                <h1 style="font-family: 'Nunito';font-weight: 700;color: #202224;font-size: 23px;padding: 0px;padding-top: 9px;margin-left: 23px;margin-top: -5px;">5 missões</h1>
+                                <div class="row"><i class="material-icons vertical-align-middle" style="color: #f93c65;margin-top: -8px;margin-right: 1px;margin-left: 34px;transform: rotateX(180deg);margin-bottom: 16px;">trending_up</i>
+                                    <p class="failing" style="padding-top: 11px;margin-left: 7px;width: 162px;margin-right: 0px;opacity: 0.70;font-weight: 700;"><strong>0&nbsp;</strong>missões concluídas</p>
                                 </div>
                             </div>
                         </div>
@@ -206,15 +210,15 @@
                             <div class="card-body">
                                 <div class="row align-items-center no-gutters">
                                     <div class="col mr-2">
-                                        <p style="font-family: 'Nunito';font-weight: 500;margin-bottom: 0px;margin-top: -29px;margin-left: -3px;font-size: 15px;color: #202224;">Status Evolutivo</p>
+                                        <p style="font-family: 'Nunito';font-weight: 700;margin-bottom: 0px;margin-top: -17px;margin-left: 26px;font-size: 15px;color: #202224;opacity: 0.70;">Tempo de Curso</p>
                                     </div>
                                     <div class="col-auto">
-                                        <div class="shadow-icon" style="background-color: rgba(26,222,141,0.24);border-radius: 20px;padding: 10px;width: 52px;margin-right: -6px;margin-top: -20px;color: #858796;"><img src="assets/img/image.svg" style="width: 31px;height: 37px;"></div>
+                                        <div class="shadow-icon" style="background-color: rgba(227,157,129,0.36);border-radius: 20px;padding: 10px;width: 52px;margin-right: 8px;margin-top: 0px;color: #858796;"><i class="fa fa-rotate-left" style="font-size: 33px;padding-bottom: -7px;color: #ff9066;"></i></div>
                                     </div>
                                 </div>
-                                <h1 style="font-family: 'Nunito';font-weight: 600;color: #202224;font-size: 23px;padding: 0px;padding-top: 9px;margin-left: -4px;">Australopithecus</h1>
-                                <div class="row"><i class="material-icons vertical-align-middle" style="color: #1ade8d;margin-top: 10px;margin-right: 2px;margin-left: 7px;">trending_up</i>
-                                    <p style="padding-top: 11px;margin-left: 5px;width: 162px;margin-right: 0px;"><strong>8 aulas</strong> para evolução</p>
+                                <h1 style="font-family: 'Nunito';font-weight: 700;color: #202224;font-size: 23px;padding: 0px;padding-top: 9px;margin-left: 23px;margin-top: -5px;">344 dias</h1>
+                                <div class="row"><i class="material-icons vertical-align-middle" style="color: #1ade8d;margin-top: 10px;margin-right: 1px;margin-left: 34px;">trending_up</i>
+                                    <p style="padding-top: 11px;margin-left: 7px;width: 162px;margin-right: 0px;opacity: 0.70;font-weight: 700;"><strong>1.8%</strong>&nbsp;para evolução</p>
                                 </div>
                             </div>
                         </div>
@@ -224,62 +228,123 @@
                     <div class="col">
                         <div class="card shadow py-2" style="border-radius: 15px;">
                             <div class="card-body">
-                                <h1 style="font-family: 'Nunito';font-weight: 800;color: #202224;font-size: 23px;padding: 0px;padding-top: 0px;margin-left: -4px;padding-bottom: 14px;">Status evolutivo</h1>
-                                <div class="progress mb-4" style="border-radius: 15px;height: 14px;padding-top: 0px;">
+                                <h1 style="font-family: 'Nunito';font-weight: 800;color: #202224;font-size: 23px;padding: 0px;padding-top: 0px;margin-left: 12px;padding-bottom: 14px;margin-right: 0px;">Status evolutivo</h1>
+                                <div class="progress mb-4" style="border-radius: 15px;height: 14px;padding-top: 0px;margin-right: 11px;margin-left: 10px;margin-top: 22px;">
                                     <div class="progress-bar bg-danger" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 13%"><span class="sr-only">20%</span></div>
                                 </div>
-                                <div class="row caveiras" style="margin-right: 0px;margin-left: 0px;margin-top: -4px;"><i class="la la-minus palito"></i><i class="la la-minus palito fraco"></i><i class="la la-minus palito fraco"></i><i class="la la-minus palito fraco"></i></div>
-                                <div class="row caveiras" style="margin-right: 0px;margin-left: 0px;"><img src="assets/img/image.svg" style="padding-right: 0px;"><img class="caveira-preta" src="assets/img/image.svg"><img class="caveira-preta" src="assets/img/image.svg"><img class="caveira-preta" src="assets/img/image.svg"></div>
+                                <div class="row caveiras" style="margin-right: 0px;margin-left: 7px;margin-top: -4px;"><i class="la la-minus palito"></i><i class="la la-minus palito fraco"></i><i class="la la-minus palito fraco"></i><i class="la la-minus palito fraco"></i></div>
+                                <div class="row caveiras" style="margin-right: 0px;margin-left: 8px;"><img src="assets/img/image.svg" style="padding-right: 0px;"><img class="caveira-preta" src="assets/img/image.svg"><img class="caveira-preta" src="assets/img/image.svg"><img class="caveira-preta" src="assets/img/image.svg"></div>
                                 <div
-                                    class="row caveiras" style="margin-right: 0px;margin-left: 0px;padding-top: 3px;">
-                                    <p class="status-subtitulo">Australopithecus</p>
-                                    <p>Homo Erectus</p>
-                                    <p>Homo Neandertal</p>
-                                    <p>Homo Sapiens</p>
+                                    class="row caveiras" style="margin-right: 0px;margin-left: 8px;padding-top: 3px;">
+                                    <p class="status-subtitulo" style="margin-bottom: 0px;">Australopithecus</p>
+                                    <p style="margin-bottom: 0px;">Homo Erectus</p>
+                                    <p style="margin-bottom: 0px;">Homo Neandertal</p>
+                                    <p style="margin-bottom: 1px;">Homo Sapiens</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-6 mb-4">
-                    <div class="card shadow mb-4">
-                        <div class="card-header py-3">
-                            <h6 class="text-primary font-weight-bold m-0">Projects</h6>
-                        </div>
-                        <div class="card-body">
-                            <h4 class="small font-weight-bold">Server migration<span class="float-right">20%</span></h4>
-                            <h4 class="small font-weight-bold">Sales tracking<span class="float-right">40%</span></h4>
-                            <div class="progress mb-4">
-                                <div class="progress-bar bg-warning" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;"><span class="sr-only">40%</span></div>
-                            </div>
-                            <div class="progress mb-4">
-                                <div class="progress-bar bg-warning" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;"><span class="sr-only">40%</span></div>
-                            </div>
-                            <h4 class="small font-weight-bold">Customer Database<span class="float-right">60%</span></h4>
-                            <div class="progress mb-4">
-                                <div class="progress-bar bg-primary" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"><span class="sr-only">60%</span></div>
-                            </div>
-                            <h4 class="small font-weight-bold">Payout Details<span class="float-right">80%</span></h4>
-                            <div class="progress mb-4">
-                                <div class="progress-bar bg-info" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"><span class="sr-only">80%</span></div>
-                            </div>
-                            <h4 class="small font-weight-bold">Account setup<span class="float-right">Complete!</span></h4>
-                            <div class="progress mb-4">
-                                <div class="progress-bar bg-success" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"><span class="sr-only">100%</span></div>
-                            </div>
-                        </div>
+            <div class="card shadow" style="margin-top: 2.5%;border-radius: 20px;background-color: #fcfdfd;padding-top: 0;margin-bottom: 10px;">
+                <div class="card-body">
+                    <div class="table-responsive table mt-2" id="dataTable" role="grid" aria-describedby="dataTable_info" style="padding-top: 0;margin: 0;">
+                        <table class="table dataTable my-0" id="dataTable" style="font-family: 'Nunito';color: #202224;font-weight: 600;">
+                            <thead style="background-color: #fcfdfd;padding: 0 !important;margin: 0 !important;">
+                                <tr style="color: #202224;font-family: 'Nunito';padding-top: 0;">
+                                    <th style="border-top: 0px;border-radius: 20px !important;text-align: inherit;padding-left: 1.5em;">Aula</th>
+                                    <th style="border-top: 0px;">Tema</th>
+                                    <th style="border-top: 0px;">Professor</th>
+                                    <th style="border-top: 0px;">Módulo</th>
+                                    <th style="border-top: 0px;">Status</th>
+                                    <th style="border-top: 0px;border-radius: 20px !important;">Salary</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="background-color: #fff;height: 40px;">
+                                    <td style="padding-left: 1.5em;">000001</td>
+                                    <td>Avaliando Ideias</td>
+                                    <td>Luiz Felipe<br></td>
+                                    <td style="padding-right: 0px;">Australopithecus<br></td>
+                                    <td style="min-height: 0px;margin-top: 0px;padding-bottom: 46px;">
+                                        <p style="font-weight: 700;background-color: #dee7fc;color: #4880ff;text-align: center;border-radius: 8px;position: absolute;padding-right: 20px;padding-bottom: 5px;padding-top: 5px;padding-left: 20px;">Completa</p>
+                                    </td>
+                                    <td style="padding-right: 93px;">
+                                        <p class="shadow-box" style="font-weight: 700;background-color: #1ade8d;color: #fff;text-align: center;border-radius: 6px;position: absolute;padding-right: 20px;padding-bottom: 5px;padding-top: 5px;padding-left: 20px;opacity: 0.60;">Assistir a essa aula</p>
+                                    </td>
+                                </tr>
+                                <tr style="background-color: #fff;padding-top: 0px;">
+                                    <td style="padding-left: 1.5em;">000002</td>
+                                    <td style="width: 225px;">Entrevistas com Usuários</td>
+                                    <td>Luiz Felipe</td>
+                                    <td>Australopithecus<br></td>
+                                    <td style="padding-bottom: 46px;">
+                                        <p style="font-weight: 700;background-color: #dad1f5;color: #6226ef;text-align: center;border-radius: 8px;position: absolute;padding-right: 6px;padding-bottom: 5px;padding-top: 5px;padding-left: 6px;">Em progresso</p>
+                                    </td>
+                                    <td>
+                                        <p class="shadow-box" style="font-weight: 700;background-color: #1ade8d;color: #fff;text-align: center;border-radius: 6px;position: absolute;padding-right: 20px;padding-bottom: 5px;padding-top: 5px;padding-left: 20px;">Assistir a essa aula</p>
+                                    </td>
+                                </tr>
+                                <tr style="background-color: #fff;">
+                                    <td style="padding-left: 1.5em;">000003</td>
+                                    <td>KPI´s e Objetivos</td>
+                                    <td>Luiz Felipe</td>
+                                    <td>Australopithecus<br></td>
+                                    <td style="padding-bottom: 46px;">
+                                        <p style="font-weight: 700;background-color: #f6d8d5;color: #ef3826;text-align: center;border-radius: 8px;position: absolute;padding-right: 11px;padding-bottom: 5px;padding-top: 5px;padding-left: 11px;">Não iniciado</p>
+                                    </td>
+                                    <td>
+                                        <p class="shadow-box" style="font-weight: 700;background-color: #1ade8d;color: #fff;text-align: center;border-radius: 6px;position: absolute;padding-right: 20px;padding-bottom: 5px;padding-top: 5px;padding-left: 20px;">Assistir a essa aula</p>
+                                    </td>
+                                </tr>
+                                <tr style="background-color: #fff;">
+                                    <td style="padding-left: 1.5em;">000004</td>
+                                    <td>Planejando MVP</td>
+                                    <td>Luiz Felipe</td>
+                                    <td>Australopithecus<br></td>
+                                    <td style="padding-bottom: 46px;">
+                                        <p style="font-weight: 700;background-color: #dee7fc;color: #4880ff;text-align: center;border-radius: 8px;position: absolute;padding-right: 20px;padding-bottom: 5px;padding-top: 5px;padding-left: 20px;">Completa</p>
+                                    </td>
+                                    <td>
+                                        <p class="shadow-box" style="font-weight: 700;background-color: #1ade8d;color: #fff;text-align: center;border-radius: 6px;position: absolute;padding-right: 20px;padding-bottom: 5px;padding-top: 5px;padding-left: 20px;opacity: 0.60;">Assistir a essa aula</p>
+                                    </td>
+                                </tr>
+                                <tr style="background-color: #fff;">
+                                    <td style="padding-left: 1.5em;">000005</td>
+                                    <td>Modelo B2B e B2C</td>
+                                    <td>Luiz Felipe</td>
+                                    <td>Australopithecus<br></td>
+                                    <td style="padding-bottom: 46px;">
+                                        <p style="font-weight: 700;background-color: #dad1f5;color: #6226ef;text-align: center;border-radius: 8px;position: absolute;padding-right: 6px;padding-bottom: 5px;padding-top: 5px;padding-left: 6px;">Em progresso</p>
+                                    </td>
+                                    <td>
+                                        <p class="shadow-box" style="font-weight: 700;background-color: #1ade8d;color: #fff;text-align: center;border-radius: 6px;position: absolute;padding-right: 20px;padding-bottom: 5px;padding-top: 5px;padding-left: 20px;">Assistir a essa aula</p>
+                                    </td>
+                                </tr>
+                                <tr></tr>
+                                <tr style="background-color: #fcd7d4;color: #ef3826;">
+                                    <td style="padding-left: 1.5em;border-bottom-left-radius: 10px;">MISSÃO</td>
+                                    <td>Subimissão de tarefa</td>
+                                    <td></td>
+                                    <td>Australopithecus</td>
+                                    <td style="color: inherit;padding-right: 85px;padding-bottom: 46px;">
+                                        <p style="font-weight: 700;background-color: #f0bab4;color: #ef3826;text-align: center;border-radius: 8px;position: absolute;padding-right: 11px;padding-bottom: 5px;padding-top: 5px;padding-left: 11px;">Não iniciado</p>
+                                    </td>
+                                    <td style="border-bottom-right-radius: 10px;">
+                                        <p class="shadow-box" style="font-weight: 700;background-color: #1ade8d;color: #fff;text-align: center;border-radius: 6px;position: absolute;padding-right: 20px;padding-bottom: 5px;padding-top: 5px;padding-left: 20px;">Realizar Submissão</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr></tr>
+                            </tfoot>
+                        </table>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <footer class="bg-white sticky-footer">
-        <div class="container my-auto">
-            <div class="text-center my-auto copyright"><span>Copyright © Brand 2019</span></div>
-        </div>
-    </footer>
-    </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a></div>
+    </div>
+    </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>

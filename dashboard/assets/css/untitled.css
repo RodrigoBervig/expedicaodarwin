@@ -4,8 +4,9 @@ p {
   color: #202224;
 }
 
-strong {
-  color: #1ade8d;
+.failing strong {
+  color: #f93c65;
+  opacity: 1 !important;
 }
 
 .progress-bar.bg-danger {
@@ -37,12 +38,40 @@ strong {
 }
 
 .caveira-preta {
-  filter: brightness(35%);
+  opacity: 0.4;
 }
 
 .status-subtitulo {
   font-family: 'Nunito';
   font-weight: 500;
   color: #202224;
+}
+
+.text-dark.mb-0 {
+}
+
+.navbar.navbar-light.navbar-expand.bg-white.shadow.mb-4.topbar.static-top {
+  margin-bottom: 0 !important;
+}
+
+.card-body {
+  padding: 0;
+}
+
+.shadow-box {
+  position: relative;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-box:after {
+}
+
+.sucess strong {
+  color: #f3c53d;
+}
+
+strong {
+  color: #1ade8d;
 }
 
