@@ -1,19 +1,48 @@
-.card.shadow {
-  border-radius: 15px;
-}
-
-.card-body {
-  height: 161px;
-}
-
-.text-uppercase.text-primary.font-weight-bold.text-xs.mb-1 {
-  text-transform: none !important;
+p {
+  font-size: 15px;
   font-family: 'Nunito';
-  font-size: 16px;
-  color: #202224 !important;
+  color: #202224;
 }
 
 strong {
-  color: #00b69b;
+  color: #1ade8d;
+}
+
+.progress-bar.bg-danger {
+  border-radius: 15px;
+  background-color: #1ade8d !important;
+}
+
+.row.caveiras {
+  display: flex;
+  justify-content: space-around;
+}
+
+.progress.mb-4 {
+  margin-bottom: 0rem !important;
+}
+
+.la.la-minus.palito {
+  transform: rotate(90deg);
+  font-size: 20px;
+  color: #1ade8d;
+}
+
+.la.la-minus.palito.fraco {
+  color: rgba(26, 222, 141, 0.4);
+}
+
+.progress {
+  background-color: rgba(26, 222, 141, 0.4);
+}
+
+.caveira-preta {
+  filter: brightness(35%);
+}
+
+.status-subtitulo {
+  font-family: 'Nunito';
+  font-weight: 500;
+  color: #202224;
 }
 
