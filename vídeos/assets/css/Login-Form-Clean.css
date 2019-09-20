@@ -95,3 +95,34 @@ input[type=checkbox]:checked ~ .checkmark:after {
   display: block;
 }
 
+a:hover {
+  color: #1ade8d;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.texto-botao-accordion {
+}
+
+.texto-botao-accordion {
+  color: #2e2e2e;
+  font-family: 'Nunito';
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.mb-0, .my-0 {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+#missao a:hover {
+  color: #f00 !important;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.card-header:first-child {
+  border-bottom-color: #d5d5d5 !important;
+}
+
