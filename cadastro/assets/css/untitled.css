@@ -90,3 +90,12 @@ strong {
   background-color: white;
 }
 
+#descricao {
+  width: 60%;
+}
+
+.btn.btn-light.close {
+  box-shadow: none;
+  opacity: 1;
+}
+
