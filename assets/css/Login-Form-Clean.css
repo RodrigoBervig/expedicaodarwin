@@ -68,3 +68,9 @@
   text-decoration: none;
 }
 
+#botao-entrar:hover {
+  color: #00da80 !important;
+  background-color: white !important;
+  transform: scale(1.01);
+}
+

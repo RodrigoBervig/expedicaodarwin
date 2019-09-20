@@ -75,3 +75,8 @@ strong {
   color: #1ade8d;
 }
 
+.btn1:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+}
+

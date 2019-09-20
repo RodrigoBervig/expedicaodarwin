@@ -95,3 +95,14 @@ input[type=checkbox]:checked ~ .checkmark:after {
   display: block;
 }
 
+#btn-cadastro:hover {
+  transform: scale(0.9) !important;
+  opacity: 0.8;
+}
+
+#btn-ircurso:hover {
+  background-color: #242a3d !important;
+  opacity: 0.8;
+  color: #1ade8d;
+}
+
